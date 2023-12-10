@@ -1,0 +1,58 @@
+Prompt:
+
+Retrieve age and median income features from United States census data and create a scatter plot in Python using the seaborn library.
+
+
+Completion:
+
+To create a scatter plot in Python using the seaborn library, we first need to import the necessary libraries and load the data. Here's a step-by-step guide:
+
+1. Import the necessary libraries:
+
+```python
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+```
+
+2. Load the data:
+
+```python
+# Assuming the data is in a CSV file named 'census_data.csv'
+data = pd.read_csv('census_data.csv')
+```
+
+3. Retrieve age and median income features:
+
+```python
+# Assuming 'Age' and 'Median Income' are the columns in the data
+age = data['Age']
+income = data['Median Income']
+```
+
+4. Create a scatter plot:
+
+```python
+# Create a scatter plot
+sns.scatterplot(x=age, y=income)
+
+# Add labels and title
+plt.xlabel('Age')
+plt.ylabel('Median Income')
+plt.title('Age vs Median Income')
+
+# Show the plot
+plt.show()
+```
+
+Please note that the actual code might vary depending on the structure of your data and the specific columns you want to use. Also, you need to replace 'census_data.csv' and 'Age' and 'Median Income' with your actual file name and column names.
+
+
+
+Observations:
+	- Code is instructional in nature
+	- Code needs a lot of text editing before you can run it
+		- It automatically capitalizes field names
+		- It does verbose reassignment
+	- It doesn't know your data
+	- It's overly verbose

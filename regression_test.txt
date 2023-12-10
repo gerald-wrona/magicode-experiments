@@ -1,0 +1,56 @@
+Prompt:
+
+Create a Python script. Use census data. Drop features with more than 20% missingness.  Split the data into separate training and testing sets. Use the training set to model income as a function of age using linear regression and the scikit-learn library. Report training accuracy and R-squared value.
+
+
+Completion:
+
+Here is a Python script that uses the scikit-learn library to perform linear regression on census data. The script assumes that the data is in a CSV file named 'census.csv'.
+
+```python
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score
+
+# Load the data
+data = pd.read_csv('census.csv')
+
+# Drop features with more than 20% missingness
+data = data.dropna(thresh=data.shape[0]*0.8, axis=1)
+
+# Split the data into features (X) and target (y)
+X = data.drop('income', axis=1)
+y = data['income']
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Create a linear regression model
+model = LinearRegression()
+
+# Train the model
+model.fit(X_train, y_train)
+
+# Make predictions on the test set
+y_pred = model.predict(X_test)
+
+# Calculate the training accuracy
+training_accuracy = model.score(X_train, y_train)
+
+# Calculate the R-squared value
+r2 = r2_score(y_test, y_pred)
+
+print('Training accuracy:', training_accuracy)
+print('R-squared value:', r2)
+```
+
+Please replace 'census.csv' with the path to your actual census data file. Also, make sure that 'income' is the name of the column in your data that you want to predict.
+
+This script will drop any features with more than 20% missingness, split the data into training and testing sets, train a linear regression model on the training data, make predictions on the test set, and print the training accuracy and R-squared value.  
+
+
+Notes:
+- Required a lot less formatting
+- It makes predictions without being told
+- This is genuinely perfect
