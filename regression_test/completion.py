@@ -11,7 +11,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 
 # Load the data
-data = pd.read_csv('C:\\Users\\wrona\\Documents\\upskill\\magicode\\census_data.csv') #(sic)
+data = pd.read_csv('census_data.csv')
 
 # Drop features with more than 20% missingness
 data = data.dropna(thresh=data.shape[0]*0.8, axis=1)

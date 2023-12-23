@@ -10,19 +10,21 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Assuming the data is in a CSV file named 'census_data.csv'
-data = pd.read_csv('C:\\Users\\wrona\\Documents\\upskill\\magicode\\census_data.csv')
+data = pd.read_csv('census_data.csv')
 
 # Assuming 'Age' and 'Median Income' are the columns in the data
-#age = data['Age']
-#income = data['Median Income']
+age = data['Age']
+income = data['Median Income']
 
 '''
-gerald: here i have fixed it
-'''
+(Note 1)
+
+Default behavior assumes capitalized column headers.
+Simple adjustment:
 
 age = data['age']
 income = data['income']
-
+'''
 
 # Create a scatter plot
 sns.scatterplot(x=age, y=income)
