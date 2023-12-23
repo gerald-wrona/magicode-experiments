@@ -4,8 +4,8 @@ Credit for Magicoder goes to the research team that produced the original work (
 Credit for the gradio implementation is to AK(@_akhaliq) and the Hugging Face team
 
 Links:
-https://github.com/ise-uiuc/magicoder
-https://huggingface.co/spaces/ise-uiuc/Magicoder-S-DS-6.7B
+- https://github.com/ise-uiuc/magicoder
+- https://huggingface.co/spaces/ise-uiuc/Magicoder-S-DS-6.7B
 
 Citations:
 @article{wei2023magicoder,
