@@ -1,0 +1,28 @@
+notes:
+
+What's the goal?
+Where does this leave us?
+	- writing code is no longer a human-only task
+		- computers forward complex downstream tasks
+	- a blend of softskills and hardskills get the most out of llms
+	- humility, emotional intelligence: these skills are no longer special
+	
+
+WizardCoder demo break:
+https://github.com/AetherCortex/Llama-X
+-- need GPU/CUDA setup
+-- setup failed for me, or rather it turned into a CUDA rabbit hole
+
+CodeOcean not available:
+-https://huggingface.co/papers/2312.14187
+
+other good competitor:
+-- https://github.com/nlpxucan/WizardLM/tree/main/demo
+
+
+eval board:
+-- https://evalplus.github.io/leaderboard.html
+
+Llamma: open source llms
+- https://arxiv.org/abs/2302.13971v1
+

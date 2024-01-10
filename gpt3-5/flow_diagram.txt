@@ -1,0 +1,38 @@
+Prompt:
+
+I want you to create a .png flow diagram of my meal preparation process. There will be several phases. Each phase will need a short description which captures the essence of activities completed during that phase. In the first phase I spend time researching recipes and collecting ideas. In the second phase I eliminate any recipes that are too impractical. In the third phase I create a shopping list and purchase ingredients. In the fourth and final phase I cook. 
+
+
+Completion:  
+
+
+
+
+
+
+  +-------------------------+
+  |   Research and Ideas   |
+  | Spend time researching  |
+  |   recipes and collecting|
+  |          ideas          |
+  +------------|------------+
+               |
+               v
+  +-------------------------+
+  |       Elimination       |
+  | Eliminate impractical   |
+  |          recipes        |
+  +------------|------------+
+               |
+               v
+  +-------------------------+
+  |         Shopping        |
+  | Create shopping list    |
+  | Purchase ingredients    |
+  +------------|------------+
+               |
+               v
+  +-------------------------+
+  |         Cooking         |
+  |           Cook          |
+  +-------------------------+
