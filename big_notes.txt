@@ -13,7 +13,7 @@ https://github.com/AetherCortex/Llama-X
 -- need GPU/CUDA setup
 -- setup failed for me, or rather it turned into a CUDA rabbit hole
 
-CodeOcean not available:
+CodeOcean not available yet:
 -https://huggingface.co/papers/2312.14187
 
 other good competitor:
